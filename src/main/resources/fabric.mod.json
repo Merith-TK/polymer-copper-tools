@@ -5,12 +5,13 @@
 	"name": "Polymer Tools",
 	"description": "Extra Tools for Servers",
 	"authors": [
-		"Merith.TK"
+		"Merith.TK (Code)",
+		"Daedreus (Assets/Code)"
 	],
 	"contact": {
 		"sources": "https://github.com/Merith-TK/polytools"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/polytools/icon.png",
 	"environment": "*",
 	"entrypoints": {
