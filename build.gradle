@@ -1,6 +1,10 @@
 plugins {
 	id 'fabric-loom' version '1.7-SNAPSHOT'
 	id 'maven-publish'
+
+	id "me.modmuss50.mod-publish-plugin" version "0.6.2"
+
+
 }
 
 version = project.mod_version
@@ -89,4 +93,23 @@ publishing {
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
 	}
+
+}
+publishMods {
+	changelog = providers.environmentVariable("CHANGELOG")
+	type = STABLE
+	file = remapJar.archiveFile
+	modLoaders.add("fabric")
+
+	modrinth {
+		accessToken = providers.environmentVariable("MODRINTH_TOKEN")
+		projectId = "5pK8WJ7f"
+		minecraftVersions.add(project.version)
+	}
+//	TODO: USE THIS IF IT WORKS FOR US
+//	github {
+//		accessToken = providers.environmentVariable("GITHUB_TOKEN")
+//		repository = "Polymerized-Bakery/ToolsPlus"
+//		commitish = "1.21" // This is the branch the release tag will be created from
+//	}
 }
