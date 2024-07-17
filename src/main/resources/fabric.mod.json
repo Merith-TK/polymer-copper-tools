@@ -11,7 +11,7 @@
 	"contact": {
 		"sources": "https://github.com/Merith-TK/polytools"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/polytools/icon.png",
 	"environment": "*",
 	"entrypoints": {
