@@ -13,7 +13,7 @@ public class CopperHoe extends HoeItem implements PolymerItem {
 
     public CopperHoe(Item polymerItem, ToolMaterial material, Settings settings) {
         super(material, settings);
-        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("copper", "item/hoe"));
+        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("polytools", "item/copper_hoe"));
     }
 
     @Override

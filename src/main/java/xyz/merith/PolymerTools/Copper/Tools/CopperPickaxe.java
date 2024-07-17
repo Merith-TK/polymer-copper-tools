@@ -13,7 +13,7 @@ public class CopperPickaxe extends PickaxeItem implements PolymerItem {
 
     public CopperPickaxe(Item polymerItem, ToolMaterial material, Settings settings) {
         super(material, settings);
-        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("copper", "item/pickaxe"));
+        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("polytools", "item/copper_pickaxe"));
     }
 
     @Override

@@ -13,7 +13,7 @@ public class CopperSword extends SwordItem implements PolymerItem {
 
     public CopperSword(Item polymerItem, ToolMaterial material, Settings settings) {
         super(material, settings);
-        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("copper", "item/sword"));
+        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("polytools", "item/copper_sword"));
     }
 
     @Override

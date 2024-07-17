@@ -13,7 +13,7 @@ public class CopperAxe extends AxeItem implements PolymerItem {
 
     public CopperAxe(Item polymerItem, ToolMaterial material, Settings settings) {
         super(material, settings);
-        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("copper", "item/axe"));
+        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("polytools", "item/copper_axe"));
     }
 
     @Override

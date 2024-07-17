@@ -13,7 +13,7 @@ public class CopperShovel extends ShovelItem implements PolymerItem {
 
     public CopperShovel(Item polymerItem, ToolMaterial material, Settings settings) {
         super(material, settings);
-        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("copper", "item/shovel"));
+        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("polytools", "item/copper_shovel"));
     }
 
     @Override
