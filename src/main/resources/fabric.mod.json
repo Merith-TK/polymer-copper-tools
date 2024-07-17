@@ -5,7 +5,8 @@
 	"name": "Polymer Tools",
 	"description": "Extra Tools for Servers",
 	"authors": [
-		"Merith.TK"
+		"Merith.TK (Code)",
+		"Daedreus (Assets/Code)"
 	],
 	"contact": {
 		"sources": "https://github.com/Merith-TK/polytools"
