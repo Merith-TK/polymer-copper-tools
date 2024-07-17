@@ -96,20 +96,16 @@ publishing {
 
 }
 publishMods {
-	changelog = providers.environmentVariable("CHANGELOG")
+	changelog = System.getenv("CHANGELOG")  ?: "No Changelog Provided for Release"
 	type = STABLE
 	file = remapJar.archiveFile
 	modLoaders.add("fabric")
 
+	version = project.version
+
 	modrinth {
-		accessToken = providers.environmentVariable("MODRINTH_TOKEN")
+		accessToken = System.getenv("MODRINTH_TOKEN")
 		projectId = "5pK8WJ7f"
-		minecraftVersions.add(project.version)
+		minecraftVersions.add(providers.gradleProperty("minecraft_version"))
 	}
-//	TODO: USE THIS IF IT WORKS FOR US
-//	github {
-//		accessToken = providers.environmentVariable("GITHUB_TOKEN")
-//		repository = "Polymerized-Bakery/ToolsPlus"
-//		commitish = "1.21" // This is the branch the release tag will be created from
-//	}
 }
