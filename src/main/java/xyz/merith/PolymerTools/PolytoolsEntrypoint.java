@@ -9,8 +9,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import xyz.merith.PolymerTools.Copper.*;
-import xyz.merith.PolymerTools.Copper.Tools.*;
+import xyz.merith.PolymerTools.Copper.CopperEntrypoint;
+
 
 public class PolytoolsEntrypoint implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -29,36 +29,8 @@ public class PolytoolsEntrypoint implements ModInitializer {
 		LOGGER.info("Loading Polymer Tools");
 
 		// Register Tools
-		Registry.register(Registries.ITEM, Identifier.of("polytools", "copper_axe"),
-				new CopperAxe(
-						Items.IRON_AXE,
-						PolyToolMaterials.COPPER,
-						new Item.Settings()
-								.attributeModifiers(AxeItem.createAttributeModifiers(PolyToolMaterials.COPPER, 6.5F, -3.15F))));
-		Registry.register(Registries.ITEM, Identifier.of("polytools", "copper_hoe"),
-				new CopperHoe(
-						Items.IRON_HOE,
-						PolyToolMaterials.COPPER,
-						new Item.Settings()
-								.attributeModifiers(HoeItem.createAttributeModifiers(PolyToolMaterials.COPPER, -1.5F, -2.5F))));
-		Registry.register(Registries.ITEM, Identifier.of("polytools", "copper_pickaxe"),
-				new CopperPickaxe(
-						Items.IRON_PICKAXE,
-						PolyToolMaterials.COPPER,
-						new Item.Settings()
-								.attributeModifiers(PickaxeItem.createAttributeModifiers(PolyToolMaterials.COPPER, 1.0F, -2.8F))));
-		Registry.register(Registries.ITEM, Identifier.of("polytools", "copper_shovel"),
-				new CopperShovel(
-						Items.IRON_SHOVEL,
-						PolyToolMaterials.COPPER,
-						new Item.Settings()
-								.attributeModifiers(ShovelItem.createAttributeModifiers(PolyToolMaterials.COPPER, 1.5F, -3.0F))));
-		Registry.register(Registries.ITEM, Identifier.of("polytools", "copper_sword"),
-				new CopperSword(
-						Items.IRON_SWORD,
-						PolyToolMaterials.COPPER,
-						new Item.Settings()
-								.attributeModifiers(SwordItem.createAttributeModifiers(PolyToolMaterials.COPPER, 3, -2.4F))));
+		new CopperEntrypoint();
+
 		PolymerResourcePackUtils.addModAssets("polytools");
 		LOGGER.info("Done");
 	}
