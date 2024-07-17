@@ -1,22 +1,18 @@
-package xyz.merith.PolymerTools;
+package xyz.merith.Bakery.ToolsPlus;
 
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.item.*;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import xyz.merith.PolymerTools.Copper.CopperEntrypoint;
+import xyz.merith.Bakery.ToolsPlus.Copper.CopperEntrypoint;
 
 
-public class PolytoolsEntrypoint implements ModInitializer {
+public class ToolsPlusEntrypoint implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
-    public static final Logger LOGGER = LoggerFactory.getLogger("polytools");
+    public static final Logger LOGGER = LoggerFactory.getLogger("bakery-toolsplus");
 
 
 	// TODO: Copper Armor
@@ -31,7 +27,7 @@ public class PolytoolsEntrypoint implements ModInitializer {
 		// Register Tools
 		new CopperEntrypoint();
 
-		PolymerResourcePackUtils.addModAssets("polytools");
+		PolymerResourcePackUtils.addModAssets("bakery-toolsplus");
 		LOGGER.info("Done");
 	}
 }

@@ -1,4 +1,4 @@
-package xyz.merith.PolymerTools.Copper.Tools;
+package xyz.merith.Bakery.ToolsPlus.Copper.Tools;
 
 import eu.pb4.polymer.core.api.item.PolymerItem;
 import eu.pb4.polymer.resourcepack.api.PolymerModelData;
@@ -8,12 +8,12 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 
-public class CopperPickaxe extends PickaxeItem implements PolymerItem {
+public class CopperAxe extends AxeItem implements PolymerItem {
     private final PolymerModelData model;
 
-    public CopperPickaxe(Item polymerItem, ToolMaterial material, Settings settings) {
+    public CopperAxe(Item polymerItem, ToolMaterial material, Settings settings) {
         super(material, settings);
-        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("polytools", "item/copper_pickaxe"));
+        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("bakery-toolsplus", "item/copper_axe"));
     }
 
     @Override

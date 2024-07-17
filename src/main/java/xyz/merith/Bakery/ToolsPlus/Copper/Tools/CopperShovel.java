@@ -1,4 +1,4 @@
-package xyz.merith.PolymerTools.Copper.Tools;
+package xyz.merith.Bakery.ToolsPlus.Copper.Tools;
 
 import eu.pb4.polymer.core.api.item.PolymerItem;
 import eu.pb4.polymer.resourcepack.api.PolymerModelData;
@@ -13,7 +13,7 @@ public class CopperShovel extends ShovelItem implements PolymerItem {
 
     public CopperShovel(Item polymerItem, ToolMaterial material, Settings settings) {
         super(material, settings);
-        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("polytools", "item/copper_shovel"));
+        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("bakery-toolsplus", "item/copper_shovel"));
     }
 
     @Override

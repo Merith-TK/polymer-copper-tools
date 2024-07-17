@@ -1,4 +1,4 @@
-package xyz.merith.PolymerTools;
+package xyz.merith.Bakery.ToolsPlus;
 
 import com.google.common.base.Suppliers;
 import net.minecraft.block.Block;
@@ -11,7 +11,7 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 
-public enum PolytoolsMaterials implements ToolMaterial {
+public enum ToolsPlusMaterials implements ToolMaterial {
     COPPER(BlockTags.INCORRECT_FOR_IRON_TOOL, 190, 9F, 1.5F, 10, () -> Ingredient.ofItems(Items.COPPER_INGOT));
 
     private final TagKey<Block> inverseTag;
@@ -21,7 +21,7 @@ public enum PolytoolsMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    private PolytoolsMaterials(
+    private ToolsPlusMaterials(
             final TagKey<Block> inverseTag,
             final int itemDurability,
             final float miningSpeed,
