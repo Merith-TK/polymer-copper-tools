@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XX ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "id": "bakery-toolsplus:emerald_hoe",
+    "count": 1
+  }
+}

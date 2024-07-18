@@ -1,0 +1,22 @@
+{
+    "bakery-toolsplus.itemgroup":               "ToolsPlus",
+
+    "item.bakery-toolsplus.amethyst_axe":       "Amethyst Axe",
+    "item.bakery-toolsplus.amethyst_hoe":       "Amethyst Hoe",
+    "item.bakery-toolsplus.amethyst_pickaxe":   "Amethyst Pickaxe",
+    "item.bakery-toolsplus.amethyst_shovel":    "Amethyst Shovel",
+    "item.bakery-toolsplus.amethyst_sword":     "Amethyst Sword",
+
+    "item.bakery-toolsplus.copper_axe":         "Copper Axe",
+    "item.bakery-toolsplus.copper_hoe":         "Copper Hoe",
+    "item.bakery-toolsplus.copper_pickaxe":     "Copper Pickaxe",
+    "item.bakery-toolsplus.copper_shovel":      "Copper Shovel",
+    "item.bakery-toolsplus.copper_sword":       "Copper Sword",
+
+    "item.bakery-toolsplus.emerald_axe":        "Emerald Axe",
+    "item.bakery-toolsplus.emerald_hoe":        "Emerald Hoe",
+    "item.bakery-toolsplus.emerald_pickaxe":    "Emerald Pickaxe",
+    "item.bakery-toolsplus.emerald_shovel":     "Emerald Shovel",
+    "item.bakery-toolsplus.emerald_sword":      "Emerald Sword"
+}
+  

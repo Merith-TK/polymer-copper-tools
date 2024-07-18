@@ -1,6 +1,10 @@
 plugins {
 	id 'fabric-loom' version '1.7-SNAPSHOT'
 	id 'maven-publish'
+
+	id "me.modmuss50.mod-publish-plugin" version "0.6.2"
+
+
 }
 
 version = project.mod_version
@@ -18,6 +22,10 @@ repositories {
 	// for more information about repositories.
 
 	maven { url 'https://maven.nucleoid.xyz' } // You should have it
+	maven {
+		name = "Terraformers"
+		url = "https://maven.terraformersmc.com/"
+	}
 }
 
 loom {
@@ -42,6 +50,9 @@ dependencies {
 
 	modImplementation include("eu.pb4:polymer-core:${project.polymer_version}")
 	modImplementation include("eu.pb4:polymer-resource-pack:${project.polymer_version}")
+
+	// Add Mod Menu to Dev Environment
+	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
 	
 }
 
@@ -88,5 +99,22 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+	}
+
+}
+publishMods {
+	changelog = System.getenv("CHANGELOG")  ?: "No Changelog Provided for Release"
+	type = STABLE
+	file = remapJar.archiveFile
+	modLoaders.add("fabric")
+
+	version = project.version
+
+	modrinth {
+		accessToken = System.getenv("MODRINTH_TOKEN")
+		projectId = "5pK8WJ7f"
+		minecraftVersions.add(providers.gradleProperty("minecraft_version"))
+		requires("fabric-api")
+		optional("polymer")
 	}
 }

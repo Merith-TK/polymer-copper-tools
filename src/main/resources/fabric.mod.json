@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "polytools",
+	"id": "bakery-toolsplus",
 	"version": "${version}",
 	"name": "Polymer Tools",
 	"description": "Extra Tools for Servers",
@@ -12,11 +12,11 @@
 		"sources": "https://github.com/Merith-TK/polytools"
 	},
 	"license": "MIT",
-	"icon": "assets/polytools/icon.png",
+	"icon": "assets/bakery-toolsplus/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"xyz.merith.PolymerTools.PolytoolsEntrypoint"
+			"xyz.merith.Bakery.ToolsPlus.ToolsPlusEntrypoint"
 		]
 	},
 	"depends": {
