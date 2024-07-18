@@ -12,7 +12,11 @@ import java.util.function.Supplier;
 
 
 public enum ToolsPlusMaterials implements ToolMaterial {
-    COPPER(BlockTags.INCORRECT_FOR_IRON_TOOL, 190, 9F, 1.5F, 10, () -> Ingredient.ofItems(Items.COPPER_INGOT));
+    // Reference for Values: net/minecraft/item/ToolMaterials.java
+
+    AMETHYST(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 250, 8.0F, 2.0F, 32, () -> Ingredient.ofItems(Items.AMETHYST_SHARD)),
+    COPPER(BlockTags.INCORRECT_FOR_IRON_TOOL, 190, 9F, 1.5F, 10, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
+    EMERALD(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1796, 8.5F, 3.5F, 15, () -> Ingredient.ofItems(Items.EMERALD));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

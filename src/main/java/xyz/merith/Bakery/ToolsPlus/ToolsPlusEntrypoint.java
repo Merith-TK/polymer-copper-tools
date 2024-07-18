@@ -5,7 +5,9 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import xyz.merith.Bakery.ToolsPlus.Amethyst.AmethystEntrypoint;
 import xyz.merith.Bakery.ToolsPlus.Copper.CopperEntrypoint;
+import xyz.merith.Bakery.ToolsPlus.Emerald.EmeraldEntrypoint;
 
 
 public class ToolsPlusEntrypoint implements ModInitializer {
@@ -16,7 +18,7 @@ public class ToolsPlusEntrypoint implements ModInitializer {
 
 
 	// TODO: Copper Armor
-	// TODO: Emerald Tools
+	// TODO: Hoe Tools
 	// TODO: Test Blocks
 
 
@@ -24,8 +26,13 @@ public class ToolsPlusEntrypoint implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Loading Polymer Tools");
 
+
+		// TODO: Register this as a config file
 		// Register Tools
+		new AmethystEntrypoint();
 		new CopperEntrypoint();
+		new EmeraldEntrypoint();
+
 
 		PolymerResourcePackUtils.addModAssets("bakery-toolsplus");
 		LOGGER.info("Done");

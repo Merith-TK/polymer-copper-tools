@@ -8,12 +8,12 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 
-public class CopperSword extends SwordItem implements PolymerItem {
+public class Hoe extends HoeItem implements PolymerItem {
     private final PolymerModelData model;
 
-    public CopperSword(Item polymerItem, ToolMaterial material, Settings settings) {
+    public Hoe(Item polymerItem, ToolMaterial material, Settings settings) {
         super(material, settings);
-        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("bakery-toolsplus", "item/copper_sword"));
+        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("bakery-toolsplus", "item/copper_hoe"));
     }
 
     @Override

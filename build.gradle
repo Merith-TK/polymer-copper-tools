@@ -22,6 +22,10 @@ repositories {
 	// for more information about repositories.
 
 	maven { url 'https://maven.nucleoid.xyz' } // You should have it
+	maven {
+		name = "Terraformers"
+		url = "https://maven.terraformersmc.com/"
+	}
 }
 
 loom {
@@ -46,6 +50,9 @@ dependencies {
 
 	modImplementation include("eu.pb4:polymer-core:${project.polymer_version}")
 	modImplementation include("eu.pb4:polymer-resource-pack:${project.polymer_version}")
+
+	// Add Mod Menu to Dev Environment
+	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
 	
 }
 
@@ -107,5 +114,7 @@ publishMods {
 		accessToken = System.getenv("MODRINTH_TOKEN")
 		projectId = "5pK8WJ7f"
 		minecraftVersions.add(providers.gradleProperty("minecraft_version"))
+		requires("fabric-api")
+		optional("polymer")
 	}
 }
