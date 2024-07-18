@@ -1,12 +1,9 @@
-package xyz.merith.Bakery.ToolsPlus.Amethyst.Tools;
+package xyz.merith.Bakery.ToolsPlus.Helpers.Tools;
 
 import eu.pb4.polymer.core.api.item.PolymerItem;
 import eu.pb4.polymer.resourcepack.api.PolymerModelData;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.*;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
@@ -14,9 +11,9 @@ import org.jetbrains.annotations.Nullable;
 public class Sword extends SwordItem implements PolymerItem {
     private final PolymerModelData model;
 
-    public Sword(Item polymerItem, ToolMaterial material, Settings settings) {
+    public Sword(Item polymerItem, ToolMaterial material, Settings settings, String toolName) {
         super(material, settings);
-        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("bakery-toolsplus", "item/copper_sword"));
+        this.model = PolymerResourcePackUtils.requestModel(polymerItem, Identifier.of("bakery-toolsplus", "item/"+toolName));
     }
 
     @Override

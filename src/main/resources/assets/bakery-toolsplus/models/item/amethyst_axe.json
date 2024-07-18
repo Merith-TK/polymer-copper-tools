@@ -2,7 +2,6 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
-		"1": "bakery-toolsplus:item/amethyst_axe",
-		"particle": "bakery-toolsplus:item/amethyst_axe"
+		"layer0": "bakery-toolsplus:item/amethyst_axe"
 	}
 }
