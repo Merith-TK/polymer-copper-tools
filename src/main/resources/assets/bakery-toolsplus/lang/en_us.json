@@ -1,4 +1,6 @@
 {
+    "bakery-toolsplus.itemgroup":               "ToolsPlus",
+
     "item.bakery-toolsplus.amethyst_axe":       "Amethyst Axe",
     "item.bakery-toolsplus.amethyst_hoe":       "Amethyst Hoe",
     "item.bakery-toolsplus.amethyst_pickaxe":   "Amethyst Pickaxe",
