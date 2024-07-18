@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
-		"1": "polytools:item/amethyst_pickaxe",
-		"particle": "polytools:item/amethyst_pickaxe"
+		"1": "bakery-toolsplus:item/amethyst_pickaxe",
+		"particle": "bakery-toolsplus:item/amethyst_pickaxe"
 	}
 }

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
-		"1": "polytools:item/amethyst_hoe",
-		"particle": "polytools:item/amethyst_hoe"
+		"1": "bakery-toolsplus:item/amethyst_hoe",
+		"particle": "bakery-toolsplus:item/amethyst_hoe"
 	}
 }

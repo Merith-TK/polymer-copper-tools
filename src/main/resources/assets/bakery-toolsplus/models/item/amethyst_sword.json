@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
-		"1": "polytools:item/amethyst_sword",
-		"particle": "polytools:item/amethyst_sword"
+		"1": "bakery-toolsplus:item/amethyst_sword",
+		"particle": "bakery-toolsplus:item/amethyst_sword"
 	}
 }

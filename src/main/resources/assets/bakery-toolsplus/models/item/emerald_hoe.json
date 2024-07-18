@@ -2,6 +2,6 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
-		"layer0": "polytools:item/emerald_hoe"
+		"layer0": "bakery-toolsplus:item/emerald_hoe"
 	}
 }

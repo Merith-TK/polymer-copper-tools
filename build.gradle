@@ -32,7 +32,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"polytools" {
+		"bakery-toolsplus" {
 			sourceSet sourceSets.main
 		}
 	}
@@ -102,6 +102,11 @@ publishing {
 	}
 
 }
+
+fabricApi {
+	configureDataGeneration()
+}
+
 publishMods {
 	changelog = System.getenv("CHANGELOG")  ?: "No Changelog Provided for Release"
 	type = STABLE

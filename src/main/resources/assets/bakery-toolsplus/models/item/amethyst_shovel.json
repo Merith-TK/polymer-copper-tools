@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
-		"1": "polytools:item/amethyst_shovel",
-		"particle": "polytools:item/amethyst_shovel"
+		"1": "bakery-toolsplus:item/amethyst_shovel",
+		"particle": "bakery-toolsplus:item/amethyst_shovel"
 	}
 }
