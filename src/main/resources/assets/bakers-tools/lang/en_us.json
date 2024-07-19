@@ -1,0 +1,22 @@
+{
+    "bakers-tools.itemgroup":               "ToolsPlus",
+
+    "item.bakers-tools.amethyst_axe":       "Amethyst Axe",
+    "item.bakers-tools.amethyst_hoe":       "Amethyst Hoe",
+    "item.bakers-tools.amethyst_pickaxe":   "Amethyst Pickaxe",
+    "item.bakers-tools.amethyst_shovel":    "Amethyst Shovel",
+    "item.bakers-tools.amethyst_sword":     "Amethyst Sword",
+
+    "item.bakers-tools.copper_axe":         "Copper Axe",
+    "item.bakers-tools.copper_hoe":         "Copper Hoe",
+    "item.bakers-tools.copper_pickaxe":     "Copper Pickaxe",
+    "item.bakers-tools.copper_shovel":      "Copper Shovel",
+    "item.bakers-tools.copper_sword":       "Copper Sword",
+
+    "item.bakers-tools.emerald_axe":        "Emerald Axe",
+    "item.bakers-tools.emerald_hoe":        "Emerald Hoe",
+    "item.bakers-tools.emerald_pickaxe":    "Emerald Pickaxe",
+    "item.bakers-tools.emerald_shovel":     "Emerald Shovel",
+    "item.bakers-tools.emerald_sword":      "Emerald Sword"
+}
+  

@@ -32,7 +32,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"bakery-toolsplus" {
+		"bakers-tools" {
 			sourceSet sourceSets.main
 		}
 	}

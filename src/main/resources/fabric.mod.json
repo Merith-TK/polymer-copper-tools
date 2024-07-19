@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "bakery-toolsplus",
+	"id": "bakers-tools",
 	"version": "${version}",
 	"name": "Polymer Tools",
 	"description": "Extra Tools for Servers",
@@ -9,14 +9,14 @@
 		"Daedreus (Assets/Code)"
 	],
 	"contact": {
-		"sources": "https://github.com/Merith-TK/bakery-toolsplus"
+		"sources": "https://github.com/Merith-TK/bakers-tools"
 	},
 	"license": "MIT",
-	"icon": "assets/bakery-toolsplus/icon.png",
+	"icon": "assets/bakers-tools/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"xyz.merith.Bakery.ToolsPlus.ToolsPlusEntrypoint"
+          "xyz.merith.Bakery.ToolsPlus.BakersToolsEntrypoint"
 		]
 	},
 	"depends": {
@@ -24,5 +24,8 @@
 		"minecraft": "~1.21",
 		"java": ">=21",
 		"fabric-api": "*"
+	},
+	"recommends": {
+		"polymer": ">=0.9.5"
 	}
 }
