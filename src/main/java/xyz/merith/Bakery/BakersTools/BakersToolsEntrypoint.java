@@ -21,12 +21,12 @@ public class BakersToolsEntrypoint implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger LOGGER = LoggerFactory.getLogger("bakers-tools");
 
-	public static final Item TOOLSPLUS_TOKEN = new SimplePolymerItem(new Item.Settings(), Items.EMERALD);
+	public static final Item BAKERSTOOLS_TOKEN = new SimplePolymerItem(new Item.Settings(), Items.EMERALD);
 
-	public static final RegistryKey<ItemGroup> TOOLSPLUS_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of("bakers-tools", "item_group"));
-	public static final ItemGroup TOOLSPLUS_GROUP = FabricItemGroup.builder()
-			.icon(() -> new ItemStack(TOOLSPLUS_TOKEN))
-			.displayName(Text.translatable("bakers-tools.itemgroup"))
+	public static RegistryKey<ItemGroup> BAKERSTOOLS_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of("bakers-tools", "item_group"));
+	public static ItemGroup BAKERSTOOLS_GROUP = FabricItemGroup.builder()
+			.displayName(Text.literal("Bakery Tools"))
+			.icon(() -> new ItemStack(BAKERSTOOLS_TOKEN))
 			.build();
 	// TODO: Copper ArmorMaterialFactory
 	// TODO: Hoe ToolTemplates
@@ -38,16 +38,15 @@ public class BakersToolsEntrypoint implements ModInitializer {
 		LOGGER.info("Baking BakersTools");
 
 		// Register Token Item
-		Registry.register(Registries.ITEM, Identifier.of("bakers-tools", "token"), TOOLSPLUS_TOKEN);
+		Registry.register(Registries.ITEM, Identifier.of("bakers-tools", "token"), BAKERSTOOLS_TOKEN);
 
-		PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of("bakers-tools:itemgroup"), TOOLSPLUS_GROUP);
+		PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of("bakers-tools:itemgroup"), BAKERSTOOLS_GROUP);
 
 		// TODO: Register this as a config file
 		// Register ToolTemplates
 		new Amethyst();
 		new Copper();
 		new Emerald();
-
 
 		PolymerResourcePackUtils.addModAssets("bakers-tools");
 		LOGGER.info("Done");

@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "xyz.merith.Bakery.ToolsPlus.BakersToolsEntrypoint"
+          "xyz.merith.Bakery.BakersTools.BakersToolsEntrypoint"
 		]
 	},
 	"depends": {
