@@ -4,8 +4,8 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
-import xyz.merith.Bakery.BakersTools.Helpers.ToolMaterialFactory;
-import xyz.merith.Bakery.BakersTools.Helpers.ToolFactory;
+import xyz.merith.oven.Tools.ToolMaterialFactory;
+import xyz.merith.oven.Tools.ToolFactory;
 
 public class Emerald {
     public ToolMaterial TOOL_MATERIAL = ToolMaterialFactory.Generate(

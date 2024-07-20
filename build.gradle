@@ -21,11 +21,9 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 
+	maven { url 'https://api.modrinth.com/maven' }
 	maven { url 'https://maven.nucleoid.xyz' } // You should have it
-	maven {
-		name = "Terraformers"
-		url = "https://maven.terraformersmc.com/"
-	}
+	maven {	url 'https://maven.terraformersmc.com' }
 }
 
 loom {
@@ -46,21 +44,24 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}+${project.minecraft_version}"
 
-	modImplementation include("eu.pb4:polymer-core:${project.polymer_version}")
-	modImplementation include("eu.pb4:polymer-resource-pack:${project.polymer_version}")
+	modImplementation include("eu.pb4:polymer-core:${project.polymer_version}+${project.minecraft_version}")
+	modImplementation include("eu.pb4:polymer-resource-pack:${project.polymer_version}+${project.minecraft_version}")
+	modImplementation include("eu.pb4:polymer-autohost:${project.polymer_version}+${project.minecraft_version}")
+	modImplementation include("maven.modrinth:ovenlib:${project.oven_version}")
 
-	// Add Mod Menu to Dev Environment
+	// Add Mods to Dev Testing Environment
 	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
-	
 }
 
 processResources {
 	inputs.property "version", project.version
 
 	filesMatching("fabric.mod.json") {
-		expand "version": project.version
+		expand(
+				version: project.version,
+		)
 	}
 }
 
@@ -120,6 +121,7 @@ publishMods {
 		projectId = "5pK8WJ7f"
 		minecraftVersions.add(providers.gradleProperty("minecraft_version"))
 		requires("fabric-api")
+		requires("ovenlib")
 		optional("polymer")
 	}
 }
