@@ -20,10 +20,10 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
-
-	maven { url 'https://api.modrinth.com/maven' }
-	maven { url 'https://maven.nucleoid.xyz' } // You should have it
-	maven {	url 'https://maven.terraformersmc.com' }
+	mavenLocal()
+	maven { url 'https://api.modrinth.com/maven'	}
+	maven { url 'https://maven.nucleoid.xyz'		}
+	maven {	url 'https://maven.terraformersmc.com'	}
 }
 
 loom {
@@ -49,7 +49,13 @@ dependencies {
 	modImplementation include("eu.pb4:polymer-core:${project.polymer_version}+${project.minecraft_version}")
 	modImplementation include("eu.pb4:polymer-resource-pack:${project.polymer_version}+${project.minecraft_version}")
 	modImplementation include("eu.pb4:polymer-autohost:${project.polymer_version}+${project.minecraft_version}")
-	modImplementation include("maven.modrinth:ovenlib:${project.oven_version}")
+
+	// check if ovenlib is found locally first, if it is, use it.
+	if (project.findProject(':ovenlib') != null) {
+		modImplementation project(':ovenlib')
+	} else {
+		modImplementation include("maven.modrinth:ovenlib:${project.oven_version}")
+	}
 
 	// Add Mods to Dev Testing Environment
 	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
