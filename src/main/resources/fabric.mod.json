@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "xyz.merith.Bakery.BakersTools.BakersToolsEntrypoint"
+			"xyz.merith.bakery.bakerstools.BakersToolsEntrypoint"
 		]
 	},
 	"depends": {
@@ -27,6 +27,6 @@
 		"ovenlib": ">=0.1.1"
 	},
 	"recommends": {
-		"polymer": ">=0.9.5"
+		"polymer-core": ">=0.9.5"
 	}
 }

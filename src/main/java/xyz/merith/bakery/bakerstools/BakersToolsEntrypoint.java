@@ -1,4 +1,4 @@
-package xyz.merith.Bakery.BakersTools;
+package xyz.merith.bakery.bakerstools;
 
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
 import eu.pb4.polymer.core.api.item.SimplePolymerItem;

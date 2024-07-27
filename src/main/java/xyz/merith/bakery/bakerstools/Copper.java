@@ -1,4 +1,4 @@
-package xyz.merith.Bakery.BakersTools;
+package xyz.merith.bakery.bakerstools;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
