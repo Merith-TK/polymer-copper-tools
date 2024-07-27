@@ -9,7 +9,7 @@ public class DataGenEntrypoint  implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator generator) {
         FabricDataGenerator.Pack pack = generator.createPack();
-        pack.addProvider(RecipieGenerator)
+//        pack.addProvider(RecipieGenerator)
     }
 
 }
