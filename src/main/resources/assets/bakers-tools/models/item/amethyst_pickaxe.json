@@ -3,6 +3,5 @@
 	"parent": "minecraft:item/handheld",
 	"textures": {
 		"layer0": "bakers-tools:item/amethyst_pickaxe"
-	},
-	"display": {}
+	}
 }

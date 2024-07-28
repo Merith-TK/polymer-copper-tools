@@ -2,8 +2,6 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
-		"1": "block/copper_block",
-		"layer0": "bakers-tools:item/copper_pickaxe",
-		"particle": "block/copper_block"
+		"layer0": "bakers-tools:item/copper_pickaxe"
 	}
 }
